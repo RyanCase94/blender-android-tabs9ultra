@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Cap parallelism in Blender, Mesa and nested CMake builds to limit CI memory.
+exec /usr/bin/ninja -j "${BLENDER_ANDROID_JOBS:-3}" "$@"
