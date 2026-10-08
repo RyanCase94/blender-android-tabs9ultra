@@ -1,0 +1,6 @@
+.work/
+dist/
+logs/
+*.keystore
+*.jks
+__pycache__/
